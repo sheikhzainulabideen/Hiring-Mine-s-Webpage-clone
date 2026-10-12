@@ -1,0 +1,36 @@
+
+.navbar-h img{
+    align-items: center;
+    margin: auto auto auto 250px;
+    width: 256px;
+    height: 48px;
+    size: 25px;
+}
+#hiringminelogo{
+height: 48px;
+width: 256px;
+}
+section.section1 h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333333;
+    font-weight: 900;
+    color: #6851FF;
+}
+
+.section1 .button-apply{
+justify-content: center;
+}
+.button-apply{
+    border-radius: 30px;
+    border: black 1px solid;
+    height: 50px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 43%;
+}
+.button-apply .button1 , .button2{
+display: flex;
+justify-content: center;
+}
