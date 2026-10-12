@@ -1,36 +1,278 @@
+:root {
+    --primary-purple: #6f42c1;
+    --primary-blue: #0dcaf0;
+    --brand-purple-text: #5931db;
+}
 
-.navbar-h img{
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #fcfdff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #5931db !important;
+    letter-spacing: -0.5px;
+}
+.brand-logo-img {
+    height: 35px; 
+    width: auto;  
+    object-fit: contain;
+}
+.navbar-brand span {
+    color: #5931db;
+}
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #495057 !important;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    color: #5931db !important;
+}
+.btn-post-job {
+    background-color: #6366f1;
+    border-color: #6366f1;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50rem;
+    padding: 0.4rem 1.25rem;
+}
+.btn-post-job:hover {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+    color: #fff;
+}
+
+/* Theme Toggle */
+.theme-switch {
+    width: 45px;
+    height: 24px;
+    background-color: #e9ecef;
+    border-radius: 50rem;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
-    margin: auto auto auto 250px;
-    width: 256px;
-    height: 48px;
-    size: 25px;
+    padding: 2px;
+    transition: background-color 0.3s;
 }
-#hiringminelogo{
-height: 48px;
-width: 256px;
-}
-section.section1 h1 {
-    text-align: center;
-    font-size: 3rem;
-    color: #333333;
-    font-weight: 900;
-    color: #6851FF;
-}
-
-.section1 .button-apply{
-justify-content: center;
-}
-.button-apply{
-    border-radius: 30px;
-    border: black 1px solid;
-    height: 50px;
-    width: 300px;
+.theme-switch .icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    margin-left: 43%;
+    font-size: 10px;
+    color: #f59e0b;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
-.button-apply .button1 , .button2{
-display: flex;
-justify-content: center;
+
+/* Hero Heading Gradient */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #3b82f6 0%, #6366f1 50%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.3rem;
+    }
+}
+
+/* Hire / Apply Toggle Pill */
+.hire-apply-pill {
+    display: inline-flex;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 50rem;
+    padding: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.hire-apply-pill button {
+    border: none;
+    background: transparent;
+    padding: 8px 28px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 50rem;
+    transition: all 0.3s ease;
+}
+.hire-apply-pill button.active {
+    background: #00a8e8;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 168, 232, 0.3);
+}
+.hire-apply-pill button:not(.active) {
+    color: #64748b;
+}
+
+/* Search Box */
+.search-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.search-input-group {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 50rem;
+    padding: 8px 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+}
+.search-input-group input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 0.95rem;
+    color: #475569;
+    background: transparent;
+    width: 100%;
+}
+.search-input-group input::placeholder {
+    color: #94a3b8;
+}
+.search-icon-suffix {
+    color: #6366f1;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+/* Find Jobs Button */
+.btn-find-jobs {
+    background-color: #6366f1;
+    border-color: #6366f1;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50rem;
+    padding: 0.65rem 2.5rem;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    transition: all 0.2s;
+}
+.btn-find-jobs:hover {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+    color: #fff;
+}
+
+/* Popular Searches */
+.popular-title {
+    color: #6366f1;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.badge-tag {
+    background-color: #fff;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+.badge-tag:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+    background-color: #f8fafc;
+}
+
+/* AI Section Header */
+.ai-section-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #4f46e5 0%, #3b82f6 50%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 800px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .ai-section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Floating Chat Widget Button */
+.floating-chat-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: #6366f1;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s;
+}
+.floating-chat-btn:hover {
+    transform: scale(1.05);
+}
+/* Gradient Text Utility */
+.text-primary-gradient {
+    background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* AI Assistant Mockup Card */
+.ai-mockup-card {
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.ai-avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #6366f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-bubble.left {
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    max-width: 85%;
+}
+
+/* Purple Footer Background */
+.footer-purple {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 50%, #3730a3 100%);
+}
+
+.footer-purple a:hover {
+    text-decoration: underline !important;
 }

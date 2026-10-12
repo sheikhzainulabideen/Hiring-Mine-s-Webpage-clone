@@ -3,82 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <title>HiringMine - Dig. Apply Prepare Your Future</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top border-bottom border-light">
+        <div class="container">
+            <!-- Brand Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./assets/Hiringminelog.png" alt="HiringMine Logo" class="brand-logo-img">
+            </a>
 
-<section class="navbar-h">
-<div class="navbr">
-    <nav class="bg-color white pl-6 navbar sm:navbar-expand bg-1 fg-2 d-flex justify-content:center">
-    <div class="container-fluid">
-      <a class="h-35 w-35 navbar-brand" href="#"><img class="h-35 w-auto" id="Hiringminelogo"src="./assets/Hiringminelog.png"</a>
-      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" aria-hidden="true"></span>
-      </button>
-      <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
-        <div class="drawer-header">
-          <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Features</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How to Use</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Join Now</a>
+                    </li>
+                </ul>
+
+                <!-- Right Actions (Post a Job + Theme Switcher) -->
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="#" class="btn btn-post-job">Post a Job</a>
+                    <div class="theme-switch" title="Toggle theme">
+                        <div class="icon">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="drawer-body">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="fw-bold nav-link active" aria-current="page" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="fw-bold nav-link" href="#">Solutions</a>
-            </li>
-            <li class="nav-item">
-              <a class="fw-bold nav-link" href="#">Job</a>
-            </li>
-            <li class="nav-item">
-                <a class="fw-bold nav-link" href="#">Community</a>
-              </li>
-              <li class="nav-item">
-                <a class="fw-bold nav-link" href="#">How To Use</a>
-              </li>
-              <li class="nav-item">
-                <a class="fw-bold nav-link" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="fw-bold nav-link" href="#">Join Now</a>
-              </li>
+    </nav>
 
-          </ul>
+    <!-- Hero Section -->
+    <section class="text-center pt-5 pb-4 px-3">
+        <div class="container">
+            <!-- Main Headline -->
+            <h1 class="hero-title mb-4">
+                Dig. Apply<br>Prepare Your Future
+            </h1>
+
+            <!-- Hire / Apply Toggle Pill -->
+            <div class="mb-4">
+                <div class="hire-apply-pill">
+                    <button type="button">HIRE</button>
+                    <button type="button" class="active">APPLY</button>
+                </div>
+            </div>
+
+            <!-- Subtitle Description -->
+            <p class="text-muted mb-4 mx-auto" style="max-width: 680px; font-size: 0.95rem;">
+                Hiring Mine connects employer and job seekers, where employers are the source of the resources and the job seeker can find and apply for their targeted job.
+            </p>
+
+            <!-- Search Bar Input -->
+            <div class="search-container mb-4">
+                <div class="search-input-group">
+                    <input type="text" placeholder="Search by Role or Keyword" aria-label="Search by Role or Keyword">
+                    <span class="search-icon-suffix">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Find Jobs Action Button -->
+            <div class="mb-5">
+                <button type="button" class="btn btn-find-jobs">Find Jobs</button>
+            </div>
+
+            <!-- Popular Searches Section -->
+            <div class="mt-5 pt-3">
+                <h3 class="popular-title mb-4">Popular Searches</h3>
+                <div class="d-flex flex-wrap justify-content-center gap-2 max-w-tags mx-auto" style="max-width: 900px;">
+                    <a href="#" class="badge-tag">Software</a>
+                    <a href="#" class="badge-tag">Developer</a>
+                    <a href="#" class="badge-tag">Backend</a>
+                    <a href="#" class="badge-tag">React</a>
+                    <a href="#" class="badge-tag">Node</a>
+                    <a href="#" class="badge-tag">React Native</a>
+                    <a href="#" class="badge-tag">Flutter</a>
+                    <a href="#" class="badge-tag">UI/UX</a>
+                    <a href="#" class="badge-tag">Designer</a>
+                    <a href="#" class="badge-tag">Web</a>
+                    <a href="#" class="badge-tag">SEO</a>
+                    <a href="#" class="badge-tag">Marketing</a>
+                    <a href="#" class="badge-tag">Writer</a>
+                </div>
+            </div>
         </div>
-      </dialog>
+    </section>
+
+    <!-- AI Agent Section -->
+    <section class="text-center py-5 mt-5">
+        <div class="container">
+            <h2 class="ai-section-title mb-5">
+                Find your dream job by chatting with your AI agent.
+            </h2>
+        </div>
+    </section>
+
+
+<!-- ================= FOOTER AREA ================= -->
+<footer class="footer-purple text-white pt-5 pb-3 d-flex justify-content:centers">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <!-- Brand Info Column -->
+            <div class="col-md-6 text-center text-md-start">
+                <h4 class="fw-bold text-white mb-2">Hiring Mine</h4>
+                <p class="small text-white-50 mb-3" style="max-width: 400px;">
+                    Built with ❤️ in Pakistan for the world.<br>
+                    Connecting talent with top opportunity through AI-driven matching and smart career resources.
+                </p>
+                <!-- Social Links -->
+                <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-5">
+                    <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Links Column -->
+            <div class="col-md-6 text-center text-md-end">
+                <ul class="list-unstyled d-inline-flex flex-column gap-2 text-md-end small text-white-50">
+                    <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Life at HiringMine</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">About HiringMine</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="border-white opacity-25 my-4">
+
+        <!-- Copyright -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-white-50">
+            <div>Privacy Policy | Terms and Conditions</div>
+            <div class="mt-2 mt-md-0">© Copyright HiringMine 2026. All Rights Reserved.</div>
+        </div>
     </div>
-  </nav>
-</div>
-<section class="section1">
-    <div class="header">
-        <br>
-        <h1>Dig. Apply</h1>
-        <br>
-        <h1>Prepare Your Future</h1>
-    </div>
-    <div class="button-apply">
-        <button class="button1">HIRE</button>
-        <button class="button2">APPLY</button> 
-    </div>
+</footer>
 
 
-</section>
-
-
-
-
-
-
-
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </html>
