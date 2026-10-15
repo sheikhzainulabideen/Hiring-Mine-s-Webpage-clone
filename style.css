@@ -1,0 +1,1405 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    
+}
+
+.ribbon {
+    width: 100%;
+    background-color: #6851ff;
+}
+
+.ribbon_center_layout {
+    width: 100%;
+    max-width: 72em;
+    padding: .5em 1em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt_job_instent_matching_jobs_whatsapp {
+    display: flex;
+    gap: .5em;
+    color: #fff;
+    align-items: center;
+}
+
+.job_instant {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.matching_jobs {
+    opacity: .9;
+    line-height: 1.5;
+}
+
+.btn_not_now_link {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.btn_not_now_link button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    padding: .375em .75em;
+    border-radius: .5em;
+    color: #6851ff;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.btn_not_now_link button:hover {
+    background-color: #ffffffed;
+}
+
+.btn_not_now_link div {
+    color: #ffffffb3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn_not_now_link div:hover {
+    color: #ffffffe6;
+}
+
+.navbar_ { 
+    width: 100%;            
+    max-width: 1200px;         
+    margin: 0 auto;
+    padding: 22px 24px !important; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img { 
+    width: 186px; 
+    cursor: pointer;
+}
+
+.nav_links_container {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: .5em;
+    margin: 0;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+} 
+
+.nav_links_container a {
+    text-decoration: none;
+    color: #313131;
+}
+
+.arrow { 
+    font-size: 12px; 
+    height: 10px; color: #6952ff; 
+    cursor: pointer;
+} 
+
+#purple_link { 
+    color: #6851ff !important; 
+} 
+
+.toogle_btn { 
+    cursor: pointer;
+    background-color: #522fd4;
+    display: flex;
+    align-items: center;
+}
+
+/* HAM-BURGER */
+.hamburger_btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sec_1_2_gradientbg {
+    background-image: linear-gradient(180deg, #ffffff 0%, #eeebff 69.79%, #ebe8ff 99.99%, #e1deff 100%);
+}
+
+.sec_1_job_dig_find_job  {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+    padding-bottom: 1.25em;
+}
+
+.center_layout_job_dig_find_job {
+    width: 65%;
+    padding: 0 1em;
+}
+
+.apply_dig_heading {
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -.02em;
+    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    font-size: 5em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.25;
+}
+
+.hire_apply_main_container {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+
+.hire_apply_btn {
+    min-width: 300px;
+    height: 70px;
+    padding: 4px;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(104, 81, 255, 0.2);
+    box-shadow: rgba(104, 81, 255, 0.1) 0px 8px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease ;
+    cursor: pointer;
+}
+
+.hire_apply_btn:hover {
+    box-shadow: rgba(104, 81, 255, 0.197) 0px 8px 32px;
+    transform: translateY(-3px);
+}
+
+.hire_apply_btn div {
+    line-height: 1.5;
+    color: rgba(52, 73, 94, 0.8);
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.hire {
+    width: 50%;
+    height: 100%;
+    border-radius: 60px;
+    transition: all 0.3s ease ;
+    cursor: pointer;
+}
+
+.hire:hover {
+    transform: scale(1.1);
+
+}
+
+.apply {
+    width: 50%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(135deg, rgb(0, 168, 204), rgb(0, 151, 230));
+    box-shadow: rgba(0, 168, 204, 0.4) 0px 8px 25px;
+    color: #fff !important;
+}
+
+.dark_para {
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.00938em;
+}
+
+.searchbar_find_job_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.searchbar_keyword {
+    display: flex;
+    padding-right: 14px;
+    border: 1px solid #bfbfc4;
+    border-radius: 0.25em;
+    width: 70%;
+        border-radius:25px 25px 25px 25px;
+}
+
+.searchbar_keyword:hover {
+    border: 1px solid #000000;
+}
+
+.searchbar_keyword:focus-within {
+    border: 2px solid #6851ff;
+    /* outline: #6851ff; */
+}
+
+.search_keyword:focus::placeholder {
+    color: transparent;
+    
+}
+
+.search_keyword {
+    width: 100%;
+    padding: 8.5px 0 8.5px 14px;
+    border: none;
+    border-radius:20px 20px 20px 20px;
+    outline: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 2em;
+}
+
+.find_job_btn button {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 12px 28px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.5;
+    background: linear-gradient(135deg, rgb(85, 59, 255), rgb(81, 61, 212));
+    box-shadow: rgba(104, 81, 255, 0.3) 0px 8px 25px;
+    transition: 0.3s all ease;
+    font-weight: 700;
+    letter-spacing: 0.02857em;
+    line-height: 1.5;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.find_job_btn button:hover {
+    box-shadow: rgba(104, 81, 255, 0.491) 0px 8px 25px;
+    transform: translateY(-3px);
+}
+
+.heading_searches {
+    margin-top: 1em;
+    font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.searches {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    gap: 1em;
+    justify-content: center;
+}
+
+.searches button {
+    width: auto;
+    font-size: 14px;
+    color: #6851ff;
+    font-weight: 800;
+    border: 1px solid #6851ff80;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background-color: transparent;
+    min-width: 64px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.searches button:hover {
+    background-color: #dadada53;
+    border: 1px solid #6851ff;
+} 
+
+.sec_2_ai_chatbot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 0;
+    justify-content: center;
+}
+
+.ai_agent_heading {
+    width: 65%;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -.02em;
+    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    font-size: 3.75em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.15;
+}
+
+.ai_chatbot {
+    margin-top: 16px;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+}
+
+.darktxt_icon {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+}
+
+.darktxt_icon img {
+    margin-right: 0.5em;
+}
+
+.darktxt {
+    font-weight: 500;
+}
+
+.pink_box_container {
+    min-height: 40vh;
+    max-height: 40vh;
+    width: 100%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.pink_box_darktxt {
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    max-width: 75%;
+    background-color: #e9d5ff;
+}
+
+.dark_txt {
+    padding: 1em;
+    line-height: 1.625;
+    font-weight: 400;
+}
+
+.chatbot_round_btn {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.round_btn {
+    padding: 0 11px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8125em;
+    color: purple;
+    letter-spacing: 0.01em;
+    border-radius: 1.2em;
+    border: 1px solid purple;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.round_btn:hover {
+    background-color: #2a2a2a0a;
+}
+
+.chatbot_input_icon {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.chatbot_input_icon input {
+    padding: 8.5px 14px;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    border: 1px solid #bfbfc4;
+    border-radius: 0.25em;
+}
+
+.chatbot_input_icon input:hover {
+    border: 1px solid #000000;
+}
+
+.chatbot_input_icon input:focus {
+    border: 2px solid #6851ff;
+}
+
+.chatbot_input_icon input:focus::placeholder {
+    color: transparent;
+    
+}
+
+.icon_bg {
+    width: 36px;
+    height: 36px;
+    border-radius: 0.5em;
+    background-color: #6851ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.all_sec_gradient_bg {
+    background-image: linear-gradient(180deg, #ffffff 0%, #fdfdfdb5 69.79%, #f5f4ff4d 99.99%, #f0effc1d 100%);
+}
+
+.sec_3_top_job {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.top_job_center_layout {
+    padding: 0 3.5em;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.875em;
+}
+
+.top_jobs_heading {
+    grid-column: 1 / -1;
+    text-align: center;
+    line-height: 1.167;
+    font-size: 3em;
+    font-weight: 600;
+    color: #3f3f3f;
+    margin-bottom: 4.375rem;
+}
+
+.purple_txt {
+    color: #6851ff;
+}
+
+.top_job_card {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    background: #ffffff;
+    box-shadow: 0 6px 12px #0000001a;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-between;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.top_job_card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px #0000002b;
+}
+
+.sec_salery {
+    display: flex;
+}
+
+.salery_RS {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.salery_RS div {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+.salery_RS .skill {
+    font-weight: 600;
+}
+
+.salery_RS .salery  {
+    font-weight: 600;
+    color: #4d3bdb;
+}
+
+.imge img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sec_views {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+
+}
+
+.sec_views div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.views {
+    margin-left: auto;
+}
+
+.applied {
+    font-weight: 500;
+}
+
+.applied_btn {
+    border-radius: 5px;
+    padding: 4px 10px;
+    background-color: #f1f1f1;
+}
+
+.posted {
+    color: #3f3f3f;
+    margin-top: 10px;
+}
+
+.posted_by {
+    font-weight: 500;
+}
+
+.posted_by span {
+    color: #4d3bdb;
+}
+
+.wall_of_love {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.wall_of_love_center_layout {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 3.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1em;
+    
+}
+
+.wall_of_love_heading {
+    grid-column: 1 /-1;
+    text-align: center;
+    line-height: 1.167;
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 3.75rem;
+    
+}
+
+.wall_of_love_heading span {
+    color: #4d3bdb;
+}
+
+.wall_of_love_card {
+    background-color: #fff;
+    color: #000000de;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    border-radius: 1.25em;
+    transition: 0.2s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.wall_of_love_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px #0000002b;
+    background-color: #e8e7eb;
+}
+
+.profile_name_txt {
+    padding: 1em;
+    flex-grow: 1
+}
+
+.profile_name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.profile_pic_circle {
+    width: 40px;
+    height: 40px;
+    background-color: #bdbdbd;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    line-height: 1;
+    letter-spacing: 0.0075;
+    margin-right: 0.75rem;
+}
+
+.name_review {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 1.25em;
+    line-height: 1.6;
+    letter-spacing: 0.0075;
+    font-weight: 500;
+    color: #6851ff;
+}
+
+.posting_review {
+    font-size: 0.875em;
+    font-weight: 500;
+    color: #6b7280;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+}
+
+.txt {
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    color: #374151;
+}
+
+.pic {
+    width: 100%;
+    border-bottom-left-radius: 1.25em;
+    border-bottom-right-radius: 1.25em;
+}
+
+.row2 {
+    margin-top: 3.75em;
+    margin-bottom: 1.5em;
+}
+
+.hired_easy_step {
+    margin: 10em 0;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.hired_easy_step_center_layout {
+    max-width: 1200px;
+    padding: 0 1.5em;
+}
+
+.hired_easy_heading {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+    color: #3f3f3f;
+    line-height: 1.167;
+    letter-spacing: 0em;
+    margin-bottom: 3.125rem;
+}
+
+.hired_easy_heading span {
+    color: #6851ff;
+}
+
+.hired_easy_heading .effective_para {
+    font-size: 1.25rem;
+    color: #313131;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    font-weight: 400;
+}
+
+.hired_easy_step_cards_career_options_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1em;
+    row-gap: 2.5em;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+.easy_step_card_career_options_card {
+    padding: 1.75em 2.5em;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 1.5em;
+    /* background: linear-gradient(180deg, #edebff, hsla(0, 0%, 100%, 0) ); */
+    background: linear-gradient(180deg, #e9e7fd, hsl(0, 0%, 100%));
+    box-shadow: 0 4px 40px #bdb2ff3d;
+    transition: all .6s ease;
+    cursor: pointer;
+    
+}
+
+.easy_step_card_career_options_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 3px 8px #0000003b;
+    
+}
+
+.card_heading {
+    font-size: 1.125em;
+    font-weight: 600;
+    color: #6851ff;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+.card_text {
+    font-size: 1em;
+    color: #3f3f3f;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+.dream_job_container {
+    display: flex;
+    justify-content: center;
+}
+
+.dream_job_center_layout {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 0 1.5em;
+}
+
+.dream_job_heading {
+    font-size: 3em;
+    font-weight: 600;
+    color: #3f3f3f;
+    line-height: 1.167;
+    letter-spacing: 0em;
+}
+
+.dream_job_heading span {
+    color: #6851ff;
+}
+
+.dream_job_para {
+    font-size: 1.25em;
+    color: #313131;
+    line-height: 1.5;
+    font-size: 20px;
+    width: 70%;
+    letter-spacing: 0.00938em;
+    margin: 0 auto;
+}
+
+.dream_job_center_layout img {
+    width: 100%;
+    height: auto;
+    margin-top: 3.125em;
+}
+
+.top_profiles {
+    text-align: center;
+    margin: 6.25em 0;
+}
+
+.top_profile_heading {
+    font-size: 3em;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1.7;
+    letter-spacing: 0em;
+}
+
+.top_profiles span {
+    color: #6851ff;
+}
+
+.top_profile_para {
+    font-size: 1.25em;
+    color: #000000;
+    line-height: 1.5;
+    font-size: 20px;
+    letter-spacing: 0.00938em;
+    margin: 0 auto;
+    font-weight: 400;
+    max-width: 1200px;
+    padding: 0 1.5em;
+    margin-bottom: 2.5em;
+}
+
+.profiles_container {
+    width: 100%;
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.profile_mini_container {
+    padding: 0.5em 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.profile {
+    max-width: 100%;
+    padding: 0.5em .75em;
+    border-radius: .75em .75em .75em 0px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 0.25em;
+    cursor: pointer;
+    transition: 0.2s ;
+    
+}
+
+.profile:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px ;
+    background-color: #ffffff34;
+}
+
+.profile_pic {
+    width: 34px;
+    height: 34px;
+}
+
+.profile_pic img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile_name {
+    padding-left: 0.725em;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    color: #6851ff;
+}
+
+.comma {
+    font-size: 12px;
+    color: #6851ff;
+}
+
+
+.career_options_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10em auto;
+    padding: 0 1.5em;
+}
+
+.career_option_heading {
+    font-size: 3em;
+    font-weight: 600;
+    color: #3f3f3f;
+    line-height: 1.167;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+.career_option_heading span {
+    color: #6851ff;
+}
+
+.card_job_txt {
+    color: #6b6b6b;
+    font-size: 1.125em;
+}
+
+.view_more {
+    text-decoration: underline;
+    color: #6851ff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: .25em;
+    cursor: pointer;
+}
+
+.connect_postjob_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    padding: 0 1.5em;
+}
+
+.connect_mini_container {
+    width: 100%;
+    display: flex;
+}
+
+.img_txt {
+    flex-grow: 0;
+    max-width: 41.6667%;
+}
+
+.banner_img img {
+    width: 100%;
+}
+
+.heading_banner {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: -.02em;
+    text-align: left;
+    color: #3f3f3f;
+    margin-bottom: 1.25rem;
+}
+
+.heading_banner span {
+    color: #6851ff;
+}
+
+.vertical_line {
+    flex-grow: 0;
+    max-width: 16.6667%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.line {
+    width: 2.6px;
+    height: 140px;
+    background: #6851ff;
+}
+
+
+.footer {
+    width: 100%;
+    /* height: 470px; */
+    margin-top: 5em;
+    padding-top: 5em;
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+    color: #fff;
+}
+
+.footer1 {
+    width: 90%;
+    max-width: 1192px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    padding: 0 1.25em;
+    display: flex;
+}
+
+.text_web_links {
+    width: 33.3333%;
+}
+
+.contect {
+    width: 66.6667%;
+}
+
+.simple_text {
+    margin-top: 0.6em;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: 0.00949em;
+}
+
+.web_links_heading {
+    margin-top: 2.5em;
+}
+
+.web_link_heading {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+.web_links {
+    width: 65%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+} 
+
+.contect {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contect_content {
+    height: max-content;
+}
+
+.heading_contect {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+.second_li {
+    gap: 5px;
+}
+
+.forth_li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contect_content ul li {
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5em 0.25em;
+    border-top: 1px solid #fff;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.00938em;
+    line-height: 1.5;
+}
+
+.privacy_terms {
+    display: flex;
+    gap: 1.25em;
+}
+
+.privacy_terms p {
+    margin: 0 !important;
+}
+
+.privacy_terms p:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .center_layout_job_dig_find_job {
+        width: 75%;
+    }
+
+    .ai_agent_heading {
+        width: 75%;
+    }
+
+    .hired_easy_step_cards_career_options_cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 !important;
+    }
+
+    .view_more {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 1025px) {
+    .wall_of_love_center_layout {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1em;
+    }
+
+    .col_none {
+        display: none;
+    }
+
+    .top_job_center_layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .top_job_card {
+        width: 100%;
+        
+    }
+
+    .wall_of_love_card {
+        margin-left: auto; 
+        margin-right: auto;  
+        /* margin-top: 1em;     
+        width: 95%;   */
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+    .hamburger_btn {
+        display: block;
+        margin-left: auto;
+        font-size: 1em;
+    }
+
+    .nav_links_container {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        gap: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+
+    .nav_links_container.show {
+        display: flex;
+    }
+
+    .toggle_butn { 
+        margin-left: 0.1em; 
+    }
+
+    .center_layout_job_dig_find_job {
+        width: 100%;
+    }
+
+    .ai_agent_heading {
+        width: 100%;
+    }
+
+    .connect_postjob_container {
+        display: none;
+    }
+
+    .footer1 {
+        flex-wrap: wrap;        
+        justify-content: space-between;
+    }
+
+    .text_web_links, 
+    .contect {
+        width: 100%;            
+    }
+
+    .contect {
+        justify-content: flex-start; 
+        margin-top: 20px;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .matching_jobs {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .sec_1_job_dig_find_job {
+        margin-top: 1em;
+    }
+
+    .apply_dig_heading {
+        font-size: 1.875em;
+    }
+
+    .apply_dig_heading br {
+        display: none;
+    }
+
+    .searchbar_keyword {
+        width: 100%;
+    }
+
+    .dark_para {
+        font-size: 1.125em;
+    }
+
+    .sec_3_top_job {
+        margin-top: 1em;
+    }
+
+    .top_jobs_heading {
+        font-size: 1.875em;
+        margin-bottom: 2.5rem;
+    }
+
+    .top_job_center_layout {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .wall_of_love_center_layout {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 1.5em;
+    }
+
+    .wall_of_love_card {
+        margin-bottom: 2em;
+        
+    }
+
+    .col_none2 {
+        display: none;
+    }
+
+    .hired_easy_step  {
+        margin: 4em 0;
+    }
+
+    .hired_easy_heading {
+        font-size: 1.875em;
+    }
+
+    .hired_easy_heading .effective_para {
+        font-size: 1.125rem;
+    }
+
+    .hired_easy_step_cards_career_options_cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dream_job_heading {
+        font-size: 1.875em;
+    }
+
+    .dream_job_para {
+        font-size: 1.125rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .top_profile_para {
+        font-size: 1.125rem;
+    }
+
+    .top_profile_heading {
+        padding: 0 1rem;
+    }
+
+    .top_profile_para {
+        padding: 0 1rem;
+        font-size: 1.25em;
+    }
+
+    .career_option_heading {
+        font-size: 1.875em;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .dream_job_center_layout {
+        padding: 0 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .top_job_center_layout {
+        padding: 0 1em;
+    }
+
+    .wall_of_love_center_layout {
+        padding: 0 1em;
+    }
+
+    .hired_easy_step_center_layout {
+        padding: 0 1em;
+    }
+
+    .pink_box_darktxt {
+        max-width: 80%;
+    }
+
+    .chatbot_round_btn {
+        margin-top: 1em;
+    }
+}
